@@ -1,0 +1,795 @@
+OK Analysoitu laite:90RTG_RS85_AVOUS12Anturi: Not_found_from_LUT_
+
+02/08/2021 OK Analysoitu laite:90RTG_RS85_AVOUS12Anturi: Not_found_from_LUT_
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_SAMAVO3 anturi: L3-12A_
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_SAMAVO3 anturi: CA1-7A_
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_SAMAVO3 anturi: L3-12A_
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_SAMAVO3 anturi: CA1-7A_
+
+10/06/2021 OK Analysoitu laite: 90RTG_RS85_SAMAVO3 anturi: L3-12A_
+
+10/06/2021 OK Analysoitu laite: 90RTG_RS85_SAMAVO3 anturi: CA1-7A_
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: Not_found_from_LUT_
+	 Eroavaisuus löytyi: U_low i: 80.76789901087004 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 30.12657534926873 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 12.986334305286718 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -19.575419626351113 (suhteellinen virhe)
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: LA2-9A_
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: Not_found_from_LUT_
+	 Eroavaisuus löytyi: S_depth: inf (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 16.609337765926796 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 181.11382823999486 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 176.43731279855567 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.497208595836817 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 37.977178119913816 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 48.181205573148134 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -127.74204991377987 (suhteellinen virhe)
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: Not_found_from_LUT_
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: Not_found_from_LUT_
+	 Eroavaisuus löytyi: U_low i: 80.76789901087004 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 30.12657534926873 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 12.986334305286718 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -19.575419626351113 (suhteellinen virhe)
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: LA2-9A_
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: Not_found_from_LUT_
+	 Eroavaisuus löytyi: S_depth: inf (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 16.609337765926796 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 181.11382823999486 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 176.43731279855567 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.497208595836817 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 37.977178119913816 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 48.181205573148134 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -127.74204991377987 (suhteellinen virhe)
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: Not_found_from_LUT_
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: Not_found_from_LUT_
+	 Eroavaisuus löytyi: U_low i: 80.76789901087004 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 30.12657534926873 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 12.986334305286718 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -19.575419626351113 (suhteellinen virhe)
+
+10/06/2021 OK Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: LA2-9A_
+
+10/06/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: Not_found_from_LUT_
+	 Eroavaisuus löytyi: S_depth: inf (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 16.609337765926796 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 181.11382823999486 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 176.43731279855567 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.497208595836817 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 37.977178119913816 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 48.181205573148134 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -127.74204991377987 (suhteellinen virhe)
+
+10/06/2021 OK Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: Not_found_from_LUT_
+
+14/04/2021 Analysoitu laite: AVOHOITOTALO_RS85_SAMAVO1 anturi: no_name_unknown
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 15.678108585004951 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 93.70231045679559 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 94.86237742979009 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 64.71877777234192 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 34.896584552309626 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 174.88172462664727 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -139.8463553827578 (suhteellinen virhe)
+
+14/04/2021 Analysoitu laite: AVOHOITOTALO_RS85_SAMAVO1 anturi: no_name_unknown
+	 Eroavaisuus löytyi: U_cov: 41.793866989876555 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 22.0517955550899 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 37.25357101975361 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 48.21204121384982 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 246.54655439028755 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 13.555687802321485 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -176.49790013046345 (suhteellinen virhe)
+
+14/04/2021 Analysoitu laite: AVOHOITOTALO_RS85_SAMAVO1 anturi: no_name_unknown
+	 Eroavaisuus löytyi: S_depth: 34.85029518140316 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 47.502150474722804 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.810567363980898 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 10.060858554946178 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 68.27686043250783 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -211.0424724962059 (suhteellinen virhe)
+
+14/04/2021 OK Analysoitu laite: AVOHOITOTALO_RS85_SAMAVO1 anturi: no_name_unknown
+
+14/04/2021 Analysoitu laite: 90RTG_RS85_SAMAVO1 anturi: no_name_unknown
+	 Eroavaisuus löytyi: S_depth: inf (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 31.974304822938926 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 119.33005226147758 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 286.8497088757741 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 21.651991766463734 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 12.394576766980995 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 68.97893817113075 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: 370.4032498527155 (suhteellinen virhe)
+
+14/04/2021 Analysoitu laite: 90RTG_RS85_SAMAVO1 anturi: no_name_unknown
+	 Eroavaisuus löytyi: S_depth: inf (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 33.860732462468505 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 42.556418939091394 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 254.21138762935135 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 11.783772135749317 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 45.37874502904998 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: 99.36879039178311 (suhteellinen virhe)
+
+14/04/2021 Analysoitu laite: 90RTG_RS85_SAMAVO1 anturi: no_name_unknown
+	 Eroavaisuus löytyi: S_depth: inf (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 18.731281057304315 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 104.93143742537383 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 285.4731901038498 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 31.41940401962227 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 10.261498485590796 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 43.673493465157 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: 151.41152123031003 (suhteellinen virhe)
+
+14/04/2021 OK Analysoitu laite: 90RTG_RS85_SAMAVO1 anturi: no_name_unknown
+
+14/04/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: no_name_unknown
+	 Eroavaisuus löytyi: U_cov: 19.536792047561207 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 67.18437019188883 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 23.477859612313242 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 11.185277286971623 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 36.66874064225184 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 17.74327519008384 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -52.51712003238407 (suhteellinen virhe)
+
+14/04/2021 Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: no_name_unknown
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 52.075518974052116 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 73.10886928312159 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 75.64215557414936 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 51.00712854478302 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 56.093370717092526 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 24.86928279729578 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -84.19403026348152 (suhteellinen virhe)
+
+14/04/2021 OK Analysoitu laite: 90RTG_RS85_AVOUS12 anturi: no_name_unknown
+
+10/04/2021 Analysoitu laite: 90RTG_RS80 EVO_PRSAMUS1 anturi: no_name_unknown
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 91.8596567196409 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 80.7883952630861 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 15.50596818745715 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 92.65786355699723 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 67.69960903946085 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 96.671312302351 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: 101.32588000120408 (suhteellinen virhe)
+
+10/04/2021 Analysoitu laite: 90RTG_RS80 EVO_PRSAMUS1 anturi: no_name_unknown
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 91.8596567196409 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 80.7883952630861 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 15.50596818745715 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 92.65786355699723 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 67.69960903946085 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 96.671312302351 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: 101.32588000120408 (suhteellinen virhe)
+
+11/03/2021 Analysoitu laite: 90RTG_RS80 EVO_PRSAMUS1 anturi: no_name_unknown
+
+11/03/2021 OK Analysoitu laite: 90RTG_RS80 EVO_PRSAMUS1 anturi: no_name_unknown
+
+11/03/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: U_cov: 30.037482876827294 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 85.06249405982989 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.305879482680254 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 11.875979972152484 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.14736413340917 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 38.35098396021152 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -43.244559989070616 (suhteellinen virhe)
+
+11/03/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: U_cov: 38.424191197051286 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 89.48946503685274 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 43.52936494034175 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.85908460240289 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 52.77266177755687 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -18.809417896111565 (suhteellinen virhe)
+
+11/03/2021 OK Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_4000
+
+11/03/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: U_cov: 34.713518352730524 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 90.0634150923923 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 41.6951268736319 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 39.01103638481015 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 37.723926961966484 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -22.24195381994237 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_8500
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_cov: 13.550189578428077 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 84.85918762859708 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 85.9697310001703 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 41.389037346645964 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 19.38466371939591 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 68.6738541721137 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -204.9649620507954 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: U_cov: 52.51316452963224 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 46.44679522997963 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 45.20627473977347 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 43.89702354979223 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.48637079772273 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -32.075252812399455 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: S_depth: 45.39473684210525 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 22.402667663147458 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.590444837271104 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.51569059987183 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 28.56034867157613 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 16.940651793617636 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -30.513156364711758 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: S_depth: 54.93421052631579 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 17.10977189754732 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 36.557311727984434 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 11.939936662575821 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 117.1395652785562 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 13.735849966462396 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: U_cov: 15.628120936149134 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.11062788801276 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.824965299613353 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -84.33348722621155 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 39.4690990309235 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 10.302099942078343 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.507086936315368 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 67.63714978716123 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -43.33060240786847 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 15.142082108347864 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.062869290782064 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 24.561719754719643 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 17.050605676126224 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 14.568934115447348 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.931662685814835 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -19.407113449635343 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 22.871615966795687 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 24.16728204923866 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 31.21560391444606 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 21.158119257798457 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 30.36762528867221 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 34.227465796659786 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -14.468695618295063 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 345.97370167746317 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 81.74827004282803 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 101.41798512301929 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.953943209311017 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 119.60234562429457 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 257.55666181873676 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -186.560880798142 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 32.809799736867944 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.092144969913598 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 61.142289603494035 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.199171304571 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -22.952454770229387 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 30.037482876827294 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 85.06249405982989 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.305879482680254 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 11.875979972152484 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.14736413340917 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 38.35098396021152 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -43.244559989070616 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 38.424191197051286 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 89.48946503685274 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 43.52936494034175 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.85908460240289 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 52.77266177755687 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -18.809417896111565 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_4000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 34.713518352730524 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 90.0634150923923 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 41.6951268736319 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 39.01103638481015 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 37.723926961966484 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -22.24195381994237 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 27.053721559674766 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 88.07956055642124 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 47.059668591216095 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 15.008644108445429 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 49.64827747701837 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 50.90018890741225 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -78.08355682801364 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_low i: 22.40040874853735 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 56.694383166469244 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 23.681132296174827 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 23.548740416210407 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 26.58911508101387 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_low i: 25.61798935542829 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -18.56356540511282 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_8500
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_cov: 13.550189578428077 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 84.85918762859708 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 85.9697310001703 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 41.389037346645964 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 19.38466371939591 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 68.6738541721137 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -204.9649620507954 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: U_cov: 52.51316452963224 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 46.44679522997963 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 45.20627473977347 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 43.89702354979223 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.48637079772273 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -32.075252812399455 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: S_depth: 45.39473684210525 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 22.402667663147458 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.590444837271104 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.51569059987183 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 28.56034867157613 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 16.940651793617636 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -30.513156364711758 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: S_depth: 54.93421052631579 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 17.10977189754732 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 36.557311727984434 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 11.939936662575821 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 117.1395652785562 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 13.735849966462396 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: U_cov: 15.628120936149134 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.11062788801276 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.824965299613353 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -84.33348722621155 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 39.4690990309235 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 10.302099942078343 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.507086936315368 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 67.63714978716123 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -43.33060240786847 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 15.142082108347864 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.062869290782064 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 24.561719754719643 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 17.050605676126224 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 14.568934115447348 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.931662685814835 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -19.407113449635343 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 22.871615966795687 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 24.16728204923866 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 31.21560391444606 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 21.158119257798457 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 30.36762528867221 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 34.227465796659786 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -14.468695618295063 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 345.97370167746317 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 81.74827004282803 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 101.41798512301929 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.953943209311017 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 119.60234562429457 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 257.55666181873676 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -186.560880798142 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 32.809799736867944 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.092144969913598 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 61.142289603494035 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.199171304571 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -22.952454770229387 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 30.037482876827294 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 85.06249405982989 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.305879482680254 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 11.875979972152484 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.14736413340917 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 38.35098396021152 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -43.244559989070616 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 38.424191197051286 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 89.48946503685274 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 43.52936494034175 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.85908460240289 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 52.77266177755687 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -18.809417896111565 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_4000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 34.713518352730524 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 90.0634150923923 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 41.6951268736319 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 39.01103638481015 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 37.723926961966484 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -22.24195381994237 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 27.053721559674766 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 88.07956055642124 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 47.059668591216095 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 15.008644108445429 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 49.64827747701837 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 50.90018890741225 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -78.08355682801364 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_low i: 22.40040874853735 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 56.694383166469244 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 23.681132296174827 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 23.548740416210407 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 26.58911508101387 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_low i: 25.61798935542829 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -18.56356540511282 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_8500
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_cov: 13.550189578428077 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 84.85918762859708 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 85.9697310001703 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 41.389037346645964 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 19.38466371939591 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 68.6738541721137 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -204.9649620507954 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: U_cov: 52.51316452963224 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 46.44679522997963 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 45.20627473977347 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 43.89702354979223 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.48637079772273 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -32.075252812399455 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: S_depth: 45.39473684210525 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 22.402667663147458 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.590444837271104 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.51569059987183 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 28.56034867157613 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 16.940651793617636 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -30.513156364711758 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: S_depth: 54.93421052631579 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 17.10977189754732 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 36.557311727984434 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 11.939936662575821 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 117.1395652785562 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 13.735849966462396 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: U_cov: 15.628120936149134 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.11062788801276 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.824965299613353 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -84.33348722621155 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 39.4690990309235 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 10.302099942078343 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.507086936315368 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 67.63714978716123 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -43.33060240786847 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 15.142082108347864 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.062869290782064 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 24.561719754719643 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 17.050605676126224 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 14.568934115447348 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.931662685814835 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -19.407113449635343 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 22.871615966795687 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 24.16728204923866 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 31.21560391444606 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 21.158119257798457 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 30.36762528867221 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 34.227465796659786 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -14.468695618295063 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 345.97370167746317 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 81.74827004282803 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 101.41798512301929 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.953943209311017 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 119.60234562429457 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 257.55666181873676 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -186.560880798142 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 32.809799736867944 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.092144969913598 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 61.142289603494035 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.199171304571 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -22.952454770229387 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 30.037482876827294 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 85.06249405982989 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.305879482680254 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 11.875979972152484 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.14736413340917 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 38.35098396021152 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -43.244559989070616 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 38.424191197051286 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 89.48946503685274 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 43.52936494034175 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.85908460240289 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 52.77266177755687 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -18.809417896111565 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_4000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 34.713518352730524 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 90.0634150923923 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 41.6951268736319 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 39.01103638481015 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 37.723926961966484 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -22.24195381994237 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 27.053721559674766 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 88.07956055642124 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 47.059668591216095 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 15.008644108445429 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 49.64827747701837 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 50.90018890741225 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -78.08355682801364 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_low i: 22.40040874853735 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 56.694383166469244 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 23.681132296174827 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 23.548740416210407 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 26.58911508101387 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_low i: 25.61798935542829 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -18.56356540511282 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_8500
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_cov: 13.550189578428077 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 84.85918762859708 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 85.9697310001703 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 41.389037346645964 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 19.38466371939591 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 68.6738541721137 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -204.9649620507954 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: U_cov: 52.51316452963224 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 46.44679522997963 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 45.20627473977347 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 43.89702354979223 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.48637079772273 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -32.075252812399455 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: S_depth: 45.39473684210525 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 22.402667663147458 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.590444837271104 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.51569059987183 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 28.56034867157613 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 16.940651793617636 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -30.513156364711758 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: S_depth: 54.93421052631579 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 17.10977189754732 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 36.557311727984434 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 11.939936662575821 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 117.1395652785562 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 13.735849966462396 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+	 Eroavaisuus löytyi: U_cov: 15.628120936149134 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.11062788801276 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.824965299613353 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -84.33348722621155 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_15000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 39.4690990309235 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 10.302099942078343 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.507086936315368 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 67.63714978716123 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -43.33060240786847 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 15.142082108347864 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 18.062869290782064 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 24.561719754719643 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 17.050605676126224 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 14.568934115447348 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.931662685814835 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -19.407113449635343 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 22.871615966795687 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 24.16728204923866 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 31.21560391444606 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 21.158119257798457 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 30.36762528867221 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 34.227465796659786 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -14.468695618295063 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 345.97370167746317 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 81.74827004282803 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 101.41798512301929 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 27.953943209311017 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 119.60234562429457 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 257.55666181873676 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -186.560880798142 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 32.809799736867944 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.092144969913598 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 61.142289603494035 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.199171304571 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -22.952454770229387 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 30.037482876827294 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 85.06249405982989 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 29.305879482680254 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 11.875979972152484 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 55.14736413340917 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 38.35098396021152 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -43.244559989070616 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 38.424191197051286 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 89.48946503685274 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 43.52936494034175 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 20.85908460240289 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 52.77266177755687 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -18.809417896111565 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_4000
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 34.713518352730524 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 90.0634150923923 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 41.6951268736319 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 39.01103638481015 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 37.723926961966484 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -22.24195381994237 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: CURVED LINEAR_6000
+	 Eroavaisuus löytyi: S_depth: 100.0 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_cov: 27.053721559674766 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 88.07956055642124 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 47.059668591216095 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 15.008644108445429 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 49.64827747701837 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 50.90018890741225 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -78.08355682801364 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_low i: 22.40040874853735 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 56.694383166469244 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 23.681132296174827 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 23.548740416210407 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_low i: 26.58911508101387 (suhteellinen virhe)
+
+25/02/2021 Analysoitu laite: KESKUSRÖNTGEN_LOGIQS8_LS81806167S4 anturi: LINEAR_9000
+	 Eroavaisuus löytyi: U_low i: 25.61798935542829 (suhteellinen virhe)
+	 Eroavaisuus löytyi: U_skew: -18.56356540511282 (suhteellinen virhe)

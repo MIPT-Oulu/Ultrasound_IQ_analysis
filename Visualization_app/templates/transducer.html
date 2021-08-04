@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Measurement</h1>
+    <ul class="list-group">
+        {% for article  in names %}
+           <li class="list-group-item"><a href = "/measurement/{{article.id}}">{{article.name}}</a></li>
+        {% endfor %}
+        <li class="list-group-item"><a href = "/trendi">Trendi seuranta</a></li>
+    </ul>
+{% endblock %}

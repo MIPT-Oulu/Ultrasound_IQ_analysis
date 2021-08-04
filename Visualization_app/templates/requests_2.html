@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+   </head>
+
+   <body>
+      <div id="myDiv" style="width:600px;height:600px;"></div>
+
+      <script>
+        function Get(yourUrl){
+        var Httpreq = new XMLHttpRequest(); // a new request
+        Httpreq.open("GET",yourUrl,false);
+        Httpreq.send(null);
+        return Httpreq.responseText;          
+        }
+        var json_obj = JSON.parse(Get("/data"));
+        
+        console.log(json_obj); 
+        var values = [
+         ['Name',  'S depth', 'U cov', 'U low 10%', 'U low 20%', 'U low 40%', 'U low 20%', 'U low 10%'],
+         [json_obj.name, json_obj.S_depth.toFixed(2), json_obj.U_cov.toFixed(2), json_obj.U_low[0].toFixed(2), json_obj.U_low[1].toFixed(2), 
+         json_obj.U_low[2].toFixed(2),  json_obj.U_low[3].toFixed(2),  json_obj.U_low[4].toFixed(2)]]
+
+     
+        // create table
+        var table = {
+            type: 'table',
+            columnwidth: [150,200,200,150],
+            columnorder: [0,1,2,3],
+            header: {
+            values: [["<b>Parameter</b>"], ["<b>Result</b>"]],
+            align: "center",
+            line: {width: 1, color: 'rgb(46, 125, 50)'},
+            fill: {color: ['rgb(67, 160, 71)']},
+            font: {family: "Sans-serif", size: 11, color: "white"}
+            },
+            cells: {
+            values: values,
+            align: ["center", "center"],
+            line: {color: 'rgb(46, 125, 50)', width: 1},
+            fill: {color: ['rgb(165, 214, 167)', 'rgb(232, 245, 233)']},
+            font: {family: "Cambria", size: 10, color: ["black"]}
+            },
+            xaxis: 'x',
+            yaxis: 'y',
+            domain: {x: [0.55, 0.9], y: [0.1,0.6]}
+        }
+
+        y = json_obj.horiz_profile
+        
+        function range(start, end) {
+            return Array(end - start + 1).fill().map((_, idx) => start + idx)
+        }
+
+        var dataHorz = {
+        x: range(0, y.length),
+        y: y,
+        xaxis: 'x1',
+        yaxis: 'y1',
+        mode: 'line',
+        line: { color: 'rgb(67, 160, 71)'},
+        name: 'Horizontal'
+        }; 
+
+        y = json_obj.vert_profiles
+        var dataVert = {
+        y: range(0, y.length).reverse(),
+        x: y,
+        xaxis: 'x2',
+        yaxis:'y2',
+        mode: 'line',
+        line: { color: 'rgb(67, 160, 71)'},
+        name: 'Vertical',
+        };
+
+        var dataArray = 
+                    {
+                        z: json_obj.im.reverse(),
+                        type: 'heatmap',
+                        colorscale:[[0, 'rgb(0,0,0)'], [1, 'rgb(255,255,255)']],
+                        showscale: false,
+                        xaxis: 'x3',
+                        yaxis: 'y3',
+                        domain: {x: [0,0.1], y: [0.0, 0.1]}
+                    };
+
+        y = [json_obj.U_low[0], json_obj.U_low[1],json_obj.U_low[2], json_obj.U_low[3], json_obj.U_low[4]]
+        var dataSegment = {
+        x:['Outer-left 10%', 'Centre-left 20%', 'Centre 40%', 'Centre-right 20%', 'Outer-right 10%'],
+        y: y,
+        xaxis: 'x4',
+        yaxis:'y4',
+        mode: 'markers',
+        line: { color: 'rgb(67, 160, 71)'},
+        type: 'scatter',
+        name: 'Segments',
+        };            
+
+
+        dataAll = [table, dataHorz, dataVert,dataArray, dataSegment];
+
+        // define subplot axes
+        var axis = {
+            showline: true,
+            zeroline: false,
+            showgrid: true,
+            mirror:true,
+            ticklen: 4,
+            gridcolor: '#ffffff',
+            tickfont: {size: 10},
+        }
+
+        var axis1 = {domain: [0, 0.49], anchor: 'y1', showticklabels: false, ticks: ""}
+        var axis2 = {domain: [0.55, 0.8], anchor: 'y2', showticklabels: false,ticks: ""}
+        var axis3 = {domain: [0.0, 0.49], anchor: 'y3', ticks: "",showticklabels: false}
+        var axis4 = {domain: [0.34, 0.60], anchor: 'x1', hoverformat: '.2f', showticklabels: false,ticks: ""}
+        var axis5 = {domain: [0.66, 0.98], anchor: 'x2', hoverformat: '.2f', showticklabels: false, ticks: ""}
+        var axis6 = {domain: [0.66, 0.98], anchor: 'x3', ticks: "",showticklabels: false}
+
+        var axis7 = {domain: [0.0, 0.49], anchor: 'y4', showticklabels: true}
+        var axis8 = {domain: [0.1, 0.3], anchor: 'x4', showticklabels: true, title:'U low [%]',
+        titlefont: {
+        family: 'Cambria',
+        size: 12,
+        color: 'grey'
+        }}
+
+        var layout = {
+            title: "Air scan analysis summary",
+            plot_bgcolor: 'rgba(232,245,233, 0.65)',
+            showlegend: false,
+            xaxis1: Object.assign(axis1,axis),
+            xaxis2: Object.assign(axis2,axis),
+            xaxis3: Object.assign(axis3,axis),
+            yaxis1: Object.assign(axis4,axis),
+            yaxis2: Object.assign(axis5,axis),
+            yaxis3: Object.assign(axis6,axis),
+            yaxis4: Object.assign(axis8,axis),
+            xaxis4: Object.assign(axis7,axis),
+
+            annotations: [{
+                xref: 'paper',
+                yref: 'paper',
+                x: 0.82,
+                xanchor: 'right',
+                y: 0.99,
+                yanchor: 'bottom',
+                text: 'Median vertical profile',
+                font: {family: "Cambria", size: 12, color: ["black"]},
+                textangle:0,
+                showarrow: false
+            }, {
+                xref: 'paper',
+                yref: 'paper',
+                x: 0.1,
+                xanchor: 'left',
+                y: 0.65,
+                yanchor: 'top',
+                text: 'Mean horizontal profile',
+                font: {family: "Cambria", size: 12, color: ["black"]},
+                showarrow: false
+                }
+                ]
+        };
+
+        Plotly.newPlot('myDiv', dataAll, layout);
+
+    </script>
+
+   </body>
+</html>
