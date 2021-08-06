@@ -185,7 +185,7 @@ _Huom: Tarkempi kuvallinen suomenkielinen dokumentaatio ohjelmien toiminnasta l�
 ## Lisenssi
 T채m채 projekti on MIT lisensoitu. Ks. `LICENSE` osiosta lis채tietoja. 
 
-## Acknowledgements
+## Aknowledgements
 Kiitokset Tampereen yliopistolliselle sairaalalle ultra채채ni-ilmakuva testiaineistosta.
 
 <!-- Yhteystiedot -->
