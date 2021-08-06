@@ -1,14 +1,5 @@
-import time
-from watchdog.observers import Observer
-from watchdog.events import PatternMatchingEventHandler
-import os
+
 import pickle
-import utils.UA_QA_analysis as QA
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-import time
-import argparse
 import numpy as np
 import pydicom
 
