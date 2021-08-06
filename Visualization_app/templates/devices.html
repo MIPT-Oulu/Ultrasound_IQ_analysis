@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Devices</h1>
+    <ul class="list-group">
+        {% for a  in names %}
+           <li class="list-group-item"><a href = "device/{{a.id}}">{{a.name}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

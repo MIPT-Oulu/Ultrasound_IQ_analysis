@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Log</h1>
+
+<ul class="list-group">
+    {% for a  in log %}
+       <!--<li class="list-group-item"><a href = "/transducer/{{a.id}}">{{a.name}}</a></li> -->
+       <dl>
+          <dt>{{a.name}}</dt>
+
+           {% for key, value  in a.params.items() %}
+           <dd>{{value|e}}</dd>
+            {% endfor %}
+       </dl>
+    
+    {% endfor %}
+</ul>
+
+
+{% endblock %} 
+

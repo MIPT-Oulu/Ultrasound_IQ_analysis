@@ -1,0 +1,601 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+      <div id="myDiv" style="width:1000;height:500px;"></div>
+      <div id="myDiv2" style="width:1000px;height:500px;"></div>
+      <div id="myDiv3" style="width:1000px;height:500px;"></div>
+      <div id="myDiv4" style="width:1000px;height:500px;"></div>
+
+
+      <script>
+        function Get(yourUrl){
+        var Httpreq = new XMLHttpRequest(); // a new request
+        Httpreq.open("GET",yourUrl,false);
+        Httpreq.send(null);
+        return Httpreq.responseText;          
+        }
+        var json_obj = JSON.parse(Get("/trend_data"));
+        
+        console.log(json_obj); 
+        document.write(json_obj.dates)
+        //*******************************************************************
+        //              U_cov plot: trace 1...3
+        //*******************************************************************
+        var trace1 = {
+        x:  json_obj.dates,//Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: json_obj.U_cov_list,
+        mode: 'markers',
+        name: 'U cov values ',
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        xaxis: 'x1',
+        yaxis: 'y1',
+        type: 'scatter'
+        };
+
+        var trace2 = {
+        x: json_obj.dates, //Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.U_cov_list.length).fill(json_obj.U_cov_mean + 3*json_obj.U_cov_sd),
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x1',
+        yaxis: 'y1',
+        name: '+3 SD'
+        };
+        var trace3 = {
+        x: json_obj.dates,//Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.U_cov_list.length).fill(json_obj.U_cov_mean - 3*json_obj.U_cov_sd),
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x1',
+        yaxis: 'y1',
+        name: '-3 SD'
+        };
+
+    //************************************************************************
+        //*******************************************************************
+        //              U_skew_list plot: trace 4...6
+        //*******************************************************************
+        var trace4 = {
+        x:   json_obj.dates,//Array(json_obj.U_skew_list.length).fill().map((x,i)=>i)+1,
+        y: json_obj.U_skew_list,
+        mode: 'markers',
+        name: 'U skew values ',
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        xaxis: 'x2',
+        yaxis: 'y2',
+        type: 'scatter'
+        };
+
+        var trace5 = {
+        x:  json_obj.dates,//Array(json_obj.U_skew_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.U_skew_list.length).fill(json_obj.U_skew_mean + 3*json_obj.U_skew_sd),
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x2',
+        yaxis: 'y2',
+        name: '+3 SD'
+        };
+        var trace6 = {
+        x:  json_obj.dates,//Array(json_obj.U_skew_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.U_skew_list.length).fill(json_obj.U_skew_mean - 3*json_obj.U_skew_sd),
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x2',
+        yaxis: 'y2',
+        name: '-3 SD'
+        };
+
+        var data = [trace1,trace2,trace3, trace4,trace5,trace6];
+
+        var layout = {
+        title: 'Dashboard for follow-up',
+        xaxis: {
+            title: 'Measurement date',
+            showgrid: false,
+            zeroline: false,
+            domain: [0, 0.45]
+        },
+        yaxis: {
+            title: 'U cov',
+            showline: false,
+        },
+        
+        yaxis2: {title: 'U skew',
+            showline: false,
+            anchor: 'x2'},
+        xaxis2: {title: 'Measurement date',
+            showgrid: false,
+            zeroline: false,
+            domain: [0.55, 1]}
+        };
+
+        Plotly.newPlot('myDiv', data, layout);
+
+        //******************************************************
+        //******************************************************
+        //******************************************************
+        //*******************************************************************
+        //              U_cov plot: trace 7..9
+        //*******************************************************************
+        var i;
+        var y = [];
+        for (i = 0; i < json_obj.U_low_list.length; i++) { 
+          y[i] =  json_obj.U_low_list[i][0];
+        }
+        var trace7 = {
+        x:  json_obj.dates,// Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: y,
+        mode: 'markers',
+        name: 'U low; Outer-left 10%',
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        xaxis: 'x1',
+        yaxis: 'y1',
+        type: 'scatter'
+        };
+
+        var trace8 = {
+        x:  json_obj.dates,//Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.U_cov_list.length).fill(json_obj.U_low_mean[0] + 3*json_obj.U_low_sd[0]),
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x1',
+        yaxis: 'y1',
+        name: '+3 SD'
+        };
+        var trace9 = {
+        x:  json_obj.dates,//Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.U_cov_list.length).fill(json_obj.U_low_mean[0] - 3*json_obj.U_low_sd[0]),
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x1',
+        yaxis: 'y1',
+        name: '-3 SD'
+        };
+
+    //************************************************************************
+        //*******************************************************************
+        //              S_depth plot: trace 10..12
+        //*******************************************************************
+        var trace10 = {
+        x:   json_obj.dates,//Array(json_obj.S_depth_list.length).fill().map((x,i)=>i)+1,
+        y: json_obj.S_depth_list,
+        mode: 'markers',
+        name: 'S depth values ',
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        xaxis: 'x2',
+        yaxis: 'y2',
+        type: 'scatter'
+        };
+
+        var trace11 = {
+        x:  json_obj.dates,//Array(json_obj.S_depth_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.S_depth_list.length).fill(json_obj.S_depth_mean + 3*json_obj.S_depth_sd),
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x2',
+        yaxis: 'y2',
+        name: '+3 SD'
+        };
+        var trace12 = {
+        x:  json_obj.dates,//Array(json_obj.S_depth_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.S_depth_list.length).fill(json_obj.S_depth_mean - 3*json_obj.S_depth_sd),
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x2',
+        yaxis: 'y2',
+        name: '-3 SD'
+        };
+
+        var data2 = [trace7,trace8,trace9, trace10,trace11,trace12];
+
+        var layout2 = {
+        xaxis: {
+            title: 'Measurement date',
+            anchor: 'x3',
+            showgrid: false,
+            zeroline: false,
+            domain:[0.55, 1] 
+        },
+        yaxis: {
+            title: 'U low, Outer-left 10%',
+            showline: false,
+        },
+        
+        yaxis2: {title: 'S depth [cm]',
+            showline: false,
+            anchor: 'x2'},
+        xaxis2: {title: 'Measurement date',
+            showgrid: false,
+            zeroline: false,
+            domain: [0, 0.45]}
+        };
+
+        Plotly.newPlot('myDiv2', data2, layout2);
+
+//************************************************************************
+        //******************************************************
+        //*******************************************************************
+        //              U low Centre-left 20%  plot: trace 7..9
+        //*******************************************************************
+        var i;
+        var y = [];
+        for (i = 0; i < json_obj.U_low_list.length; i++) { 
+          y[i] =  json_obj.U_low_list[i][1];
+        }
+        var trace7 = {
+        x:  json_obj.dates,// Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: y,
+        mode: 'markers',
+        name: 'U low; Centre-left 20%',
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        xaxis: 'x1',
+        yaxis: 'y1',
+        type: 'scatter'
+        };
+
+        var trace8 = {
+        x: json_obj.dates,// Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.U_cov_list.length).fill(json_obj.U_low_mean[1] + 3*json_obj.U_low_sd[1]),
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x1',
+        yaxis: 'y1',
+        name: '+3 SD'
+        };
+        var trace9 = {
+        x: json_obj.dates,// Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.U_cov_list.length).fill(json_obj.U_low_mean[1] - 3*json_obj.U_low_sd[1]),
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x1',
+        yaxis: 'y1',
+        name: '-3 SD'
+        };
+
+    //************************************************************************
+        //*******************************************************************
+        //              U low Centre 40% : trace 10..12
+        //*******************************************************************
+        var i;
+        var y = [];
+        for (i = 0; i < json_obj.U_low_list.length; i++) { 
+          y[i] =  json_obj.U_low_list[i][2];
+        }
+        var trace10 = {
+        x:   json_obj.dates,//Array(json_obj.S_depth_list.length).fill().map((x,i)=>i)+1,
+        y: y,
+        mode: 'markers',
+        name: 'U low; Centre 40% ',
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        xaxis: 'x2',
+        yaxis: 'y2',
+        type: 'scatter'
+        };
+
+        var trace11 = {
+        x:  json_obj.dates,//Array(json_obj.S_depth_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.S_depth_list.length).fill(json_obj.U_low_mean[2] + 3*json_obj.U_low_sd[2]),
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x2',
+        yaxis: 'y2',
+        name: '+3 SD'
+        };
+        var trace12 = {
+        x:  json_obj.dates,//Array(json_obj.S_depth_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.S_depth_list.length).fill(json_obj.U_low_mean[2] - 3*json_obj.U_low_sd[2]),
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x2',
+        yaxis: 'y2',
+        name: '-3 SD'
+        };
+
+        var data2 = [trace7,trace8,trace9, trace10,trace11,trace12];
+
+        var layout2 = {
+        xaxis: {
+            title: 'Measurement date',
+            anchor: 'x3',
+            showgrid: false,
+            zeroline: false,
+            domain:[0, 0.45] 
+        },
+        yaxis: {
+            title: 'U low, Centre-left 20%',
+            showline: false,
+        },
+        
+        yaxis2: {title: 'U low, Centre 40%',
+            showline: false,
+            anchor: 'x2'},
+        xaxis2: {title: 'Measurement date',
+            showgrid: false,
+            zeroline: false,
+            domain: [0.55, 1]}
+        };
+
+        Plotly.newPlot('myDiv3', data2, layout2);
+
+//************************************************************************
+//************************************************************************
+
+//************************************************************************
+        //******************************************************
+        //*******************************************************************
+        //              U low Centre-right 20%  plot: trace 7..9
+        //*******************************************************************
+        var i;
+        var y = [];
+        for (i = 0; i < json_obj.U_low_list.length; i++) { 
+          y[i] =  json_obj.U_low_list[i][3];
+        }
+        var trace7 = {
+        x:   json_obj.dates,//Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: y,
+        mode: 'markers',
+        name: 'U low; Centre-right 20%',
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        xaxis: 'x1',
+        yaxis: 'y1',
+        type: 'scatter'
+        };
+
+        var trace8 = {
+        x:  json_obj.dates,//Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.U_cov_list.length).fill(json_obj.U_low_mean[3] + 3*json_obj.U_low_sd[3]),
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x1',
+        yaxis: 'y1',
+        name: '+3 SD'
+        };
+        var trace9 = {
+        x:  json_obj.dates,//Array(json_obj.U_cov_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.U_cov_list.length).fill(json_obj.U_low_mean[3] - 3*json_obj.U_low_sd[3]),
+        marker: {
+            color: 'rgb(164, 194, 244)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x1',
+        yaxis: 'y1',
+        name: '-3 SD'
+        };
+
+    //************************************************************************
+        //*******************************************************************
+        //              U low Centre 40% : trace 10..12
+        //*******************************************************************
+        var i;
+        var y = [];
+        for (i = 0; i < json_obj.U_low_list.length; i++) { 
+          y[i] =  json_obj.U_low_list[i][4];
+        }
+        var trace10 = {
+        x:   json_obj.dates,//Array(json_obj.S_depth_list.length).fill().map((x,i)=>i)+1,
+        y: y,
+        mode: 'markers',
+        name: 'U low; Outer-right 10% ',
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        xaxis: 'x2',
+        yaxis: 'y2',
+        type: 'scatter'
+        };
+
+        var trace11 = {
+        x:  json_obj.dates,//Array(json_obj.S_depth_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.S_depth_list.length).fill(json_obj.U_low_mean[4] + 3*json_obj.U_low_sd[4]),
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x2',
+        yaxis: 'y2',
+        name: '+3 SD'
+        };
+        var trace12 = {
+        x:  json_obj.dates,//Array(json_obj.S_depth_list.length).fill().map((x,i)=>i)+1,
+        y: Array(json_obj.S_depth_list.length).fill(json_obj.U_low_mean[4] - 3*json_obj.U_low_sd[4]),
+        marker: {
+            color: 'rgb(67, 160, 71)',
+            size: 12,
+            line: {
+            color: 'white',
+            width: 0.5
+            }
+        },
+        mode: 'lines',
+        xaxis: 'x2',
+        yaxis: 'y2',
+        name: '-3 SD'
+        };
+
+        var data2 = [trace7,trace8,trace9, trace10,trace11,trace12];
+
+        var layout2 = {
+        xaxis: {
+            title: 'Measurement date',
+            anchor: 'x3',
+            showgrid: false,
+            zeroline: false,
+            domain:[0, 0.45] 
+        },
+        yaxis: {
+            title: 'U low, Centre-right 20%',
+            showline: false,
+        },
+        
+        yaxis2: {title: 'U low, Outer-right 10%',
+            showline: false,
+            anchor: 'x2'},
+        xaxis2: {title: 'Measurement date',
+            showgrid: false,
+            zeroline: false,
+            domain: [0.55, 1]}
+        };
+
+        Plotly.newPlot('myDiv4', data2, layout2);
+
+//************************************************************************
+//************************************************************************
+
+    </script>
+{% endblock %}

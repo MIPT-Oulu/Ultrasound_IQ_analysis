@@ -1,0 +1,7 @@
+#User settings for the ultrasound air image analysis:
+data_path: 'C:/Users/sinkinen/ultra/QA_analysis/data/' #'C:/KPacs/Imagebox' #Directory location for data to be analyzed
+save_path: 'C:/Users/sinkinen/ultra/QA_analysis/results' #Directory location for storing results
+id_us_analysis: '112233ULTRA' #'112233-ULTR'#Patient ID which is used to check is DICOM is a ultrasound air scan image
+path_LUT_table: 'C:/Users/sinkinen/ultra/QA_analysis/LUT.xls' #Path to LUT table (see documentation for more info)
+threshold_val: 10 #Percentage variability how much can differ from 'absolute error' notify in log
+

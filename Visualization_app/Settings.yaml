@@ -1,0 +1,7 @@
+#User settings for the visualization app:
+path_data: 'C:/Users/sinkinen/ultra/QA_analysis/results' #Directory location for result data
+path_log: 'C:/Users/sinkinen/ultra/QA_analysis/log_file.txt' #Directory location for log file
+n_samples: 4 #Number of previous measurements taken into account for statistics in trend follow
+
+
+
