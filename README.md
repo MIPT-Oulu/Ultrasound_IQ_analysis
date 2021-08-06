@@ -35,7 +35,7 @@
     </li>
     <li><a href="#Käyttö">Käyttö</a></li>
     <li><a href="#Lisenssi">Lisenssi</a></li>
-    <li><a href="#Aknowledgements">Aknowledgements</a></li>
+    <li><a href="#Acknowledgements">Acknowledgements</a></li>
     <li><a href="#Yhteystiedot">Yhteystiedot</a></li>
   </ol>
 </details>
@@ -185,7 +185,7 @@ _Huom: Tarkempi kuvallinen suomenkielinen dokumentaatio ohjelmien toiminnasta l�
 ## Lisenssi
 Tämä projekti on MIT lisensoitu. Ks. `LICENSE` osiosta lisätietoja. 
 
-## Aknowledgements
+## Acknowledgements
 Kiitokset Tampereen yliopistolliselle sairaalalle ultraääni-ilmakuva testiaineistosta.
 
 <!-- Yhteystiedot -->
