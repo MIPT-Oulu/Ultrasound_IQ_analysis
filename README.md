@@ -195,8 +195,8 @@ Projekti on toteutettu Oulun yliopistollisessa sairaalassa  ja Oulun yliopistoss
 
 Projektissa ovat mukana:  
 Satu Inkinen - satu.inkinen [@] oulu.fi  
-Tuomo Starck - tuomo.starck [@] ouh.fi  
-Matti Hanni  - matti.hanni [@] ouh.fi  
-Miika Nieminen - miika.nieminen [@] oulu.fi  
+Tuomo Starck - tuomo.starck [@] ppshp.fi  
+Matti Hanni  - matti.hanni [@] ppshp.fi  
+Miika Nieminen - miika.nieminen [@] ppshp.fi  
 
 Projektin linkki: [https://github.com/MIPT-Oulu/Ultrasound_IQ_analysis](https://github.com/MIPT-Oulu/Ultrasound_IQ_analysis)
