@@ -89,7 +89,7 @@ Ohjelmiston käyttö voidaan jakaa kahteen osaan 1. analyysiohjelmaan ja  2. tul
 
 ### 1. Ilmakuvien automaattisen analyysiohjelman toiminta ja käyttö
 #### Toimintaperiaate lyhyesti
-/QA_analysis/main.py tiedostoa ajamalla käynnistetään automaattinen analyysiohjelmisto (ks seuraava osio *käyttö* tarkempi ohjeistus ensin). Se pohjautuu [watchdog](https://pypi.org/project/watchdog/) kuuntelijaan, joka kuuntelee hakemistopolkua, johon laatukuvat tulevat. Mikäli hakemistopolkuun ilmestyy uusi tiedosto aloitetaan kuvalle analyysi. Ennen analyysia tarkistetaan että tiedosto on DICOM tyyppiä (on .dcm pääte) ja että kuva on ultraääni-ilmakuva (PatientID on oikeaa muotoa, joka määritellään `Settings.yaml` tiedostossa). Tämän jälkeen kuvasta analysoidaan samat parametrit mitä Horssen et al. 2017 työssä on kuvattu ja ne tallenetaan tuloshakemistoon pohjautuen seuraavanlaiseen kansiohierarkkiaan:  
+/QA_analysis/main.py tiedostoa ajamalla käynnistetään automaattinen analyysiohjelmisto (ks seuraava osio *käyttö* tarkempi ohjeistus ensin). Se pohjautuu [watchdog](https://pypi.org/project/watchdog/) kuuntelijaan, joka kuuntelee hakemistopolkua, johon laatukuvat tulevat. Mikäli hakemistopolkuun ilmestyy uusi tiedosto aloitetaan kuvalle analyysi. Ennen analyysia tarkistetaan että: 1. tiedosto on DICOM tyyppiä (on ** \*.dcm pääte**) ja 2. kuva on ultraääni-ilmakuva (**PatientID on oikeaa muotoa**, joka määritellään `Settings.yaml` tiedostossa). Tämän jälkeen kuvasta analysoidaan samat parametrit mitä Horssen et al. 2017 työssä on kuvattu ja ne tallenetaan tuloshakemistoon pohjautuen seuraavanlaiseen kansiohierarkkiaan:  
 
  ```
 +-- path_save
