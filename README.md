@@ -57,14 +57,14 @@ Projektin analyysi jakautuu kahteen osaan:
 <!-- GETTING STARTED -->
 ## Alkuasetukset
 
-Ohjelmisto on toteutettu Pythonilla (v3.8) ja tiedostosta `requirements.txt` löytyy listattuna  on vaadittavat python kirjastomoduulit. 
+Ohjelmisto on toteutettu Pythonilla (v3.8) ja tiedostosta `py38.yml` löytyy listattuna  on vaadittavat python kirjastomoduulit. 
 
 **Ohjelmiston lataus ja uuden virtuaaliympäristön luonti**
 1. Kloonaa repository:
    ```sh
    git clone https://github.com/MIPT-Oulu/Ultrasound_IQ_analysis.git
    ```
-2. Mene root hakemistoon jossa `requirements.txt` sijaitsee:
+2. Mene root hakemistoon jossa `py38.yml` sijaitsee:
    ```sh
    cd ..\Ultrasound_IQ_analysis\
    ```
