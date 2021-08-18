@@ -373,7 +373,7 @@ def US_air_image_analysis(im_crop, reverb_lines = 4 ):
     #--- parameters evaluated from the horizontal profile ---
     U_cov = 100*(np.std(u)/np.mean(u))
     m3 = (1/len(u))*np.sum((u-np.mean(u))**3)
-    m32 = (1/len(u))*np.sum(np.abs((u-np.mean(u)))**(3/2))
+    m32 = ((1/len(u))*np.sum((u-np.mean(u))**2))**(3/2)
     U_skew = m3/m32
    
     #--- Segments--
