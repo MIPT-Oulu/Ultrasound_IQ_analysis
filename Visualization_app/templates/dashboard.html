@@ -15,8 +15,8 @@
         
         console.log(json_obj); 
         var values = [
-         ['Name', 'Date',  'S depth', 'U cov', 'U low 10%', 'U low 20%', 'U low 40%', 'U low 20%', 'U low 10%'],
-         [json_obj.name , json_obj.date, json_obj.S_depth.toFixed(2), json_obj.U_cov.toFixed(2), json_obj.U_low[0].toFixed(2), json_obj.U_low[1].toFixed(2), 
+         ['Name', 'Date',  'S depth', 'U skew', 'U cov', 'U low 10%', 'U low 20%', 'U low 40%', 'U low 20%', 'U low 10%'],
+         [json_obj.name , json_obj.date, json_obj.S_depth.toFixed(2), json_obj.U_skew.toFixed(2), json_obj.U_cov.toFixed(2), json_obj.U_low[0].toFixed(2), json_obj.U_low[1].toFixed(2), 
          json_obj.U_low[2].toFixed(2),  json_obj.U_low[3].toFixed(2),  json_obj.U_low[4].toFixed(2)]]
 
         // create table
