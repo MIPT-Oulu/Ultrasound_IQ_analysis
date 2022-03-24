@@ -488,13 +488,24 @@ def MAIN_US_analysis(path_data, path_LUT_table):
     except:
         Transducer_Frequency = '' #if the frequency information missing insert empty string
            
-    
-    department = data[0x00081040].value
-    model = data[0x00081090].value
+
+    try:
+        department = data[0x00081040].value
+    except:
+        department ='Institutional_department_unknown'
+    try:    
+        model = data[0x00081090].value
+    except:
+        model ='Model_unknown'
+        
     name = department + '_' + model+ '_' + label
    
     transducer_name = transducer_name + '_' +str(Transducer_Frequency) #the transcuder name should have name and frequency known!
-    date = data[0x00080020].value
+    
+    try:
+        date = data[0x00080020].value
+    except:
+        date = '00000000'
 
     if unit == 3:
         unit ='cm'
