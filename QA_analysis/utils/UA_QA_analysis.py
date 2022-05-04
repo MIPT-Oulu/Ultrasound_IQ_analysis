@@ -201,6 +201,106 @@ def transform_convex_image2linear(im):
     polar_image : Polar image
 
     '''
+
+    #----Pre-crop ---
+    BW = im  > 0 #Threshold image    
+    label_im, nb_labels = ndimage.label(BW)
+    sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
+    loc = np.argmax(sizes)
+    BW = label_im==loc
+
+    #Compute radius:
+    #Find transducer edges:
+    vals = np.argwhere(BW==1)
+   
+    x = vals[:,1]
+    y = vals[:,0]
+    y_max = np.max(y); x_max = np.max(x)     
+    y_min = np.min(y); x_min = np.min(x) 
+    
+    inds = np.argwhere(y == y_min) #find indices of the edge
+    x_part = x[inds]
+    
+    x_start = np.min(x_part)
+    x_end = np.max(x_part)
+    
+    x_length = (x_end - x_start)/2 #segment length in x-direction
+    x_pos = int(x_start + x_length)
+    
+    inds = np.argwhere(x == x_pos)
+    y_part = y[inds]
+    y_end = np.min(y_part)
+    
+    h = y_end - y_min #segment height
+
+    # Compute radius:
+    r = (x_length**2 + h**2)/(2*h) 
+
+    offset = int(r - h)
+           
+    x = vals[:,0]
+    y = vals[:,1]    
+    
+    y_min = np.min(y)
+    y_max = np.max(y)
+    x_min = np.min(x)
+    x_max = np.max(x)
+   
+    #Crop image to content:
+    im_crop = im[x_min:x_max,y_min:y_max]
+    
+    x = np.round(im_crop.shape[0]*1)
+   
+    BW = im_crop[ 0:x.astype(int) , :]  > 0
+    label_im, nb_labels = ndimage.label(BW)
+    sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
+    loc = np.argmax(sizes)
+    BW = label_im == loc
+   
+    im_crop2 = im_crop[ 0:x.astype(int) , :]*BW
+    
+    
+    temp = np.zeros((im_crop2.shape[0]+offset, im_crop2.shape[1]))    
+    temp[offset:,:] = im_crop2
+
+    # enlarge to cover whole area:
+    temp_disk = np.zeros((2*temp.shape[0], 2*temp.shape[0]))
+   
+    offset2 = np.round(temp_disk.shape[0]/2)
+    offset2 = offset2.astype(int)
+    offset3 = np.round(-temp.shape[1]/2 + temp_disk.shape[1]/2)
+    offset3 = offset3.astype(int)
+    end_loc3 = offset3+temp.shape[1]
+    end_loc3 = end_loc3.astype(int)
+    temp_disk[ offset2: ,  offset3:end_loc3 ] = temp
+ 
+    #--- ensure image is of the type float ---
+    img = temp_disk.astype(np.float32)
+   
+    #--- the following holds the square root of the sum of squares of the image dimensions ---
+    #--- this is done so that the entire width/height of the original image is used to express the complete circular range of the resulting polar image ---
+    value = np.sqrt(((img.shape[0]/2.0)**2.0)+((img.shape[1]/2.0)**2.0))
+   
+    polar_image = cv2.linearPolar(img,(img.shape[0]/2, img.shape[1]/2), value, cv2.WARP_FILL_OUTLIERS)
+    polar_image = np.transpose(polar_image)
+    polar_image = np.fliplr(polar_image)
+    
+    return polar_image
+
+def transform_convex_image2linear_old(im):
+    '''
+    This function transforms the convex transducer image to linear using
+    polar transform.
+
+    Parameters
+    ----------
+    im : convex image
+
+    Returns
+    -------
+    polar_image : Polar image
+
+    '''
   
     #----Pre-crop ---
     BW = im  > 0 #Threshold image    
@@ -523,7 +623,12 @@ def MAIN_US_analysis(path_data, path_LUT_table):
 
 
     if TransducerType == 'CURVED LINEAR': #convex
-        im_t =  transform_convex_image2linear(im)  #transforms convex transducer to linear
+        try:
+            im_t =  transform_convex_image2linear(im)  #transforms convex transducer to linear
+        except:
+            print('Old code used')
+            im_t =  transform_convex_image2linear_old(im)
+            
         im_crop = crop_US_im(im_t, crop2half = False)
         im_crop = im_crop[:, 3:] #remove manually few pixels from the edge
         reverb_lines = 5 #number of reverberation lines to be detected is set to 5 for all curved linear transducers
