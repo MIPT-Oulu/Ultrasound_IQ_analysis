@@ -208,6 +208,7 @@ def transform_convex_image2linear(im):
     sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
     loc = np.argmax(sizes)
     BW = label_im==loc
+    BW = getLargestCC(BW) #take the largest component
 
     #Compute radius:
     #Find transducer edges:
@@ -308,6 +309,7 @@ def transform_convex_image2linear_old(im):
     sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
     loc = np.argmax(sizes)
     BW = label_im==loc
+    BW = getLargestCC(BW) #take the largest component
        
     #corner locations:
     vals = np.argwhere(BW==1)
