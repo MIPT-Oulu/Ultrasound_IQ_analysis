@@ -233,6 +233,7 @@ def transform_convex_image2linear(im):
     '''
 
     loop = True
+    c = 0
     while loop: #see if else in loop
         BW = im  > 0.5*np.mean(im) #Threshold image
         kernel = np.ones((5,5), np.uint8)
@@ -255,15 +256,18 @@ def transform_convex_image2linear(im):
         y_border = 5
         
         if  (y==y_border).any(): #Check of upper border of the image is detected
-            im2 = im[np.max(y):,:] #remove border by cropping
+            im = im[np.max(y):,:] #remove border by cropping
             # plt.subplot(2,1,1)
             # plt.imshow(im)
             # plt.subplot(2,1,2)
             # plt.imshow(im2)
             # plt.show()
             loop = True  #run again
-        
+            c +=1
+        elif c > 2:
+            break
         else:
+            
             loop = False #continue
         
     
@@ -301,19 +305,19 @@ def transform_convex_image2linear(im):
     # plt.plot(BW[y_min-1,:], 'k')
     # plt.plot([x_start,x_end], [1.05, 1.05], 'r-')
     # plt.ylim(0.8, 1.1)
-    # plt.xlim(x_end-10, x_end+10)
+    # #plt.xlim(x_end-10, x_end+10)
     # plt.show()
     
     x_length = (x_end - x_start)/2 #segment length in x-direction
     x_pos = int(x_start + x_length)
     ind_s = np.argwhere(x==x_pos)
   
-    # plt.imshow(BW)
-    # plt.plot([x_start,x_end], [y_min-1, y_min-1], 'r.')
-    # plt.scatter(int(x_pos),int(y[ind_s[0]]))
-    # plt.ylim(200,100)
-    # plt.xlim(int(x_start)-5,int(x_start)+5)
-    # plt.show()
+   #  plt.imshow(BW)
+   #  plt.plot([x_start,x_end], [y_min-1, y_min-1], 'r.')
+   #  plt.scatter(int(x_pos),int(y[ind_s[0]]))
+   # # plt.ylim(200,100)
+   #  #plt.xlim(int(x_start)-5,int(x_start)+5)
+   #  plt.show()
     
     inds = np.argwhere(x == x_pos)
     y_part = y[inds]
@@ -326,30 +330,17 @@ def transform_convex_image2linear(im):
     
     offset = int(r - h) 
 
-    loop = True
-    while loop: #see if else in loop
-        #Find mask again with dilatation to preserve image regions
-        BW = im  > 0.5*np.mean(im) #Threshold image
-        kernel = np.ones((3,3), np.uint8)
-        iters = 1
-        BW = imopen_take_largest(BW, True, kernel, iters)
+    
+    #Find mask again with dilatation to preserve image regions
+    BW = im  > 0.5*np.mean(im) #Threshold image
+    kernel = np.ones((3,3), np.uint8)
+    iters = 1
+    BW = imopen_take_largest(BW, True, kernel, iters)
              
-    
-        vals = np.argwhere(BW==1)               
-        x = vals[:,0]
-        y = vals[:,1]
-    
-            
-        y_border = 5
-        
-        if  (y==y_border).any(): #Check of upper border of the image is detected
-            im2 = im[np.max(y):,:] #remove border by cropping
-
-            loop = True  #run again
-        
-        else:
-            loop = False #continue
-            
+    vals = np.argwhere(BW==1)
+   
+    x = vals[:,0]
+    y = vals[:,1]        
     
     y_min = np.min(y)
     y_max = np.max(y)
@@ -397,8 +388,7 @@ def transform_convex_image2linear(im):
     polar_image = cv2.linearPolar(img,(img.shape[0]/2, img.shape[1]/2), value, cv2.WARP_FILL_OUTLIERS)
     polar_image = np.transpose(polar_image)
     polar_image = np.fliplr(polar_image)
-    polar_image_t  = crop_US_im(polar_image , crop2half = False)
-    
+  
  
     return polar_image
 
@@ -418,18 +408,46 @@ def transform_convex_image2linear_old(im):
 
     '''
     #----Pre-crop ---
-    BW = im > 0.5*np.mean(im) #Threshold image
+    loop = True
+    c = 0
+    while loop: #see if else in loop
     
-    kernel = np.ones((5,5), np.uint8)
-    iters = 3
-    dilate_f = False #no dilatation to find the offset value
-    BW_new = imopen_take_largest(BW, dilate_f) #This also removes text attached to the border
-    BW = BW_new  
+        BW = im > 0.5*np.mean(im) #Threshold image
         
-    label_im, nb_labels = ndimage.label(BW)
-    sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
-    loc = np.argmax(sizes)
-    BW = label_im==loc
+        kernel = np.ones((5,5), np.uint8)
+        iters = 4
+        dilate_f = True#no dilatation to find the offset value
+        BW_new = imopen_take_largest(BW, dilate_f) #This also removes text attached to the border
+        BW = BW_new  
+            
+        label_im, nb_labels = ndimage.label(BW)
+        sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
+        loc = np.argmax(sizes)
+        BW = label_im==loc
+    
+    
+        vals = np.argwhere(BW==1)
+           
+        x = vals[:,1]
+        y = vals[:,0]
+        
+        y_border = 5
+        
+        if  (y==y_border).any(): #Check of upper border of the image is detected
+            im = im[np.max(y):,:] #remove border by cropping
+            # plt.subplot(2,1,1)
+            # plt.imshow(im)
+            # plt.subplot(2,1,2)
+            # plt.imshow(im2)
+            # plt.show()
+            loop = True  #run again
+            c +=1
+        elif c > 2:
+            break
+        else:
+            
+            loop = False #continue
+            
 
 
     #corner locations:
@@ -547,7 +565,6 @@ def transform_convex_image2linear_old(im):
     polar_image = np.fliplr(polar_image)
 
     return polar_image
-
 def US_air_image_analysis(im_crop, reverb_lines = 4 ):
     '''
     Ultrasound air image analysis on cropped image im_crop
