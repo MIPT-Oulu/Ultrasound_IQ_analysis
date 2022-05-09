@@ -187,6 +187,36 @@ def get_reverb_lines(vert_profile, reverb_lines, smooth_factor = 5):
    
     return XX
 
+def imopen_take_largest(BW, dilate_f=True,  kernel=np.ones((5,5), np.uint8),  iters = 2):
+    '''
+    Performs erosion, largest component and dilatation
+
+    Parameters
+    ----------
+    BW: input binary image
+    kernel: kernel for erosion and dilatation
+    smooth_factor : number of iterations in image erosion and dilatation
+         The default is 2.
+
+    Returns
+    -------
+    BW_new : processed binary image
+
+    '''
+    img_erosion = cv2.erode(BW.astype("float"), kernel, iterations=iters) #erode binary image
+   
+    label_im, nb_labels = ndimage.label(img_erosion) #take largest component
+    sizes = ndimage.sum(img_erosion, label_im, range(nb_labels + 1))
+    loc = np.argmax(sizes)
+    img_erosion = label_im==loc
+    img_erosion = img_erosion.astype("bool")
+    if dilate_f:
+        img_dilation = cv2.dilate(img_erosion.astype("float"), kernel, iterations=iters) #dilate back binary image
+        BW_new  =  img_dilation.astype("bool")
+    else:
+        BW_new  = img_erosion  
+    return BW_new 
+
 def transform_convex_image2linear(im):
     '''
     This function transforms the convex transducer image to linear using
@@ -202,15 +232,42 @@ def transform_convex_image2linear(im):
 
     '''
 
-    #----Pre-crop ---
-    BW = im  > 0 #Threshold image    
-    label_im, nb_labels = ndimage.label(BW)
-    sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
-    loc = np.argmax(sizes)
-    BW = label_im==loc
-    BW = getLargestCC(BW) #take the largest component
-
-    #Compute radius:
+    loop = True
+    while loop: #see if else in loop
+        BW = im  > 0.5*np.mean(im) #Threshold image
+        kernel = np.ones((5,5), np.uint8)
+        iters = 3
+        dilate_f = False #no dilatation to find the offset value
+        BW_new = imopen_take_largest(BW, dilate_f) #This also removes text attached to the border
+        BW = BW_new  
+        
+        #take largest component
+        label_im, nb_labels = ndimage.label(BW)
+        sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
+        loc = np.argmax(sizes)
+        BW = label_im==loc
+    
+        vals = np.argwhere(BW==1)
+       
+        x = vals[:,1]
+        y = vals[:,0]
+        
+        y_border = 5
+        
+        if  (y==y_border).any(): #Check of upper border of the image is detected
+            im2 = im[np.max(y):,:] #remove border by cropping
+            # plt.subplot(2,1,1)
+            # plt.imshow(im)
+            # plt.subplot(2,1,2)
+            # plt.imshow(im2)
+            # plt.show()
+            loop = True  #run again
+        
+        else:
+            loop = False #continue
+        
+    
+    #Next compute radius for finding offset to polar transform:
     #Find transducer edges:
     vals = np.argwhere(BW==1)
    
@@ -219,14 +276,44 @@ def transform_convex_image2linear(im):
     y_max = np.max(y); x_max = np.max(x)     
     y_min = np.min(y); x_min = np.min(x) 
     
+    y_min+=1 #increment by one to ensure that two peaks are detected
     inds = np.argwhere(y == y_min) #find indices of the edge
+    y_part = y[inds]
     x_part = x[inds]
     
-    x_start = np.min(x_part)
-    x_end = np.max(x_part)
+
+   # x_start = np.min(x_part)
+   # x_end = np.max(x_part)
+    
+    #Find more exact locations of the peaks:
+    p = BW[y_min,:]
+    x_vals = np.argwhere(p==1)
+    
+    th = np.mean(x_vals)
+    inds_x = np.argwhere(x_vals > th)
+    
+    x_end = int(np.mean(x_vals[inds_x][:,0]))
+
+    inds_x = np.argwhere(x_vals < th)
+    x_start = int(np.mean(x_vals[inds_x][:,0]))
+    
+    # plt.plot(BW[y_min,:])
+    # plt.plot(BW[y_min-1,:], 'k')
+    # plt.plot([x_start,x_end], [1.05, 1.05], 'r-')
+    # plt.ylim(0.8, 1.1)
+    # plt.xlim(x_end-10, x_end+10)
+    # plt.show()
     
     x_length = (x_end - x_start)/2 #segment length in x-direction
     x_pos = int(x_start + x_length)
+    ind_s = np.argwhere(x==x_pos)
+  
+    # plt.imshow(BW)
+    # plt.plot([x_start,x_end], [y_min-1, y_min-1], 'r.')
+    # plt.scatter(int(x_pos),int(y[ind_s[0]]))
+    # plt.ylim(200,100)
+    # plt.xlim(int(x_start)-5,int(x_start)+5)
+    # plt.show()
     
     inds = np.argwhere(x == x_pos)
     y_part = y[inds]
@@ -236,9 +323,18 @@ def transform_convex_image2linear(im):
 
     # Compute radius:
     r = (x_length**2 + h**2)/(2*h) 
+    
+    offset = int(r - h) 
 
-    offset = int(r - h)
-           
+    
+    #Find mask again with dilatation to preserve image regions
+    BW = im  > 0.5*np.mean(im) #Threshold image
+    kernel = np.ones((3,3), np.uint8)
+    iters = 1
+    BW = imopen_take_largest(BW, True, kernel, iters)
+         
+
+    vals = np.argwhere(BW==1)               
     x = vals[:,0]
     y = vals[:,1]    
     
@@ -249,15 +345,18 @@ def transform_convex_image2linear(im):
    
     #Crop image to content:
     im_crop = im[x_min:x_max,y_min:y_max]
+    BW = BW[x_min:x_max,y_min:y_max]
+    
+    # plt.subplot(2,1,1)
+    # #plt.imshow(im[x_min-10:x_max+10,y_min-10:y_max+10])
+    # plt.imshow(im_crop)
+    # plt.subplot(2,1,2)
+    # plt.imshow(BW)
+    # #plt.imshow(BW_1[x_min-10:x_max+10,y_min-10:y_max+10])
+    # plt.show()
+        
     
     x = np.round(im_crop.shape[0]*1)
-   
-    BW = im_crop[ 0:x.astype(int) , :]  > 0
-    label_im, nb_labels = ndimage.label(BW)
-    sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
-    loc = np.argmax(sizes)
-    BW = label_im == loc
-   
     im_crop2 = im_crop[ 0:x.astype(int) , :]*BW
     
     
@@ -285,8 +384,11 @@ def transform_convex_image2linear(im):
     polar_image = cv2.linearPolar(img,(img.shape[0]/2, img.shape[1]/2), value, cv2.WARP_FILL_OUTLIERS)
     polar_image = np.transpose(polar_image)
     polar_image = np.fliplr(polar_image)
+    polar_image_t  = crop_US_im(polar_image , crop2half = False)
     
+ 
     return polar_image
+
 
 def transform_convex_image2linear_old(im):
     '''
@@ -302,15 +404,21 @@ def transform_convex_image2linear_old(im):
     polar_image : Polar image
 
     '''
-  
     #----Pre-crop ---
-    BW = im  > 0 #Threshold image    
+    BW = im > 0.5*np.mean(im) #Threshold image
+    
+    kernel = np.ones((5,5), np.uint8)
+    iters = 3
+    dilate_f = False #no dilatation to find the offset value
+    BW_new = imopen_take_largest(BW, dilate_f) #This also removes text attached to the border
+    BW = BW_new  
+        
     label_im, nb_labels = ndimage.label(BW)
     sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
     loc = np.argmax(sizes)
     BW = label_im==loc
-    BW = getLargestCC(BW) #take the largest component
-       
+
+
     #corner locations:
     vals = np.argwhere(BW==1)
    
@@ -328,11 +436,14 @@ def transform_convex_image2linear_old(im):
     #tight crop to edge fits:
     x = np.round(im_crop.shape[0]*0.5)
      
-    BW = im_crop[ 0:x.astype(int) , :]  > 0
+    BW = im_crop[ 0:x.astype(int) , :]  > 0.5*np.mean(im) #Threshold image
+    
     label_im, nb_labels = ndimage.label(BW)
     sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
     loc = np.argmax(sizes)
     BW = label_im == loc
+
+
    
     # Find edge pixels using for loop:
     left_vals = np.zeros((40, 2))
@@ -381,7 +492,13 @@ def transform_convex_image2linear_old(im):
     #take the ole image:
     x = np.round(im_crop.shape[0]*1)
    
-    BW = im_crop[ 0:x.astype(int) , :]  > 0
+    
+    BW = im_crop[ 0:x.astype(int) , :]  > 0.5*np.mean(im) #Threshold image
+    
+    kernel = np.ones((3,3), np.uint8)
+    iters = 3
+    BW = imopen_take_largest(BW, True, kernel, iters)
+    
     label_im, nb_labels = ndimage.label(BW)
     sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
     loc = np.argmax(sizes)
