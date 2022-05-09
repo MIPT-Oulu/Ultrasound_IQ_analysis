@@ -326,17 +326,30 @@ def transform_convex_image2linear(im):
     
     offset = int(r - h) 
 
+    loop = True
+    while loop: #see if else in loop
+        #Find mask again with dilatation to preserve image regions
+        BW = im  > 0.5*np.mean(im) #Threshold image
+        kernel = np.ones((3,3), np.uint8)
+        iters = 1
+        BW = imopen_take_largest(BW, True, kernel, iters)
+             
     
-    #Find mask again with dilatation to preserve image regions
-    BW = im  > 0.5*np.mean(im) #Threshold image
-    kernel = np.ones((3,3), np.uint8)
-    iters = 1
-    BW = imopen_take_largest(BW, True, kernel, iters)
-         
+        vals = np.argwhere(BW==1)               
+        x = vals[:,0]
+        y = vals[:,1]
+    
+            
+        y_border = 5
+        
+        if  (y==y_border).any(): #Check of upper border of the image is detected
+            im2 = im[np.max(y):,:] #remove border by cropping
 
-    vals = np.argwhere(BW==1)               
-    x = vals[:,0]
-    y = vals[:,1]    
+            loop = True  #run again
+        
+        else:
+            loop = False #continue
+            
     
     y_min = np.min(y)
     y_max = np.max(y)
