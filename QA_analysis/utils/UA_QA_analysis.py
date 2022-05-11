@@ -231,11 +231,12 @@ def transform_convex_image2linear(im):
     polar_image : Polar image
 
     '''
-
+    im = im[0:int(im.shape[0]/2),:] #crop bottom half (noise) away
+    #import pdb; pdb.set_trace()
     loop = True
     c = 0
     while loop: #see if else in loop
-        BW = im  > 0.5*np.mean(im) #Threshold image
+        BW = im  > 1.5*np.mean(im[0:int(im.shape[0]/2),:]) #Threshold image
         kernel = np.ones((5,5), np.uint8)
         iters = 3
         dilate_f = False #no dilatation to find the offset value
@@ -332,7 +333,7 @@ def transform_convex_image2linear(im):
 
     
     #Find mask again with dilatation to preserve image regions
-    BW = im  > 0.5*np.mean(im) #Threshold image
+    BW = im  > 1.5*np.mean(im[0:int(im.shape[0]/2),:]) #Threshold image
     kernel = np.ones((3,3), np.uint8)
     iters = 1
     BW = imopen_take_largest(BW, True, kernel, iters)
@@ -391,7 +392,7 @@ def transform_convex_image2linear(im):
   
  
     return polar_image
-
+    
 
 def transform_convex_image2linear_old(im):
     '''
@@ -408,11 +409,12 @@ def transform_convex_image2linear_old(im):
 
     '''
     #----Pre-crop ---
+    im = im[0:int(im.shape[0]/2),:] #crop bottom half (noise) away
     loop = True
     c = 0
     while loop: #see if else in loop
     
-        BW = im > 0.5*np.mean(im) #Threshold image
+        BW = im  > 1.5*np.mean(im[0:int(im.shape[0]/2),:]) #Threshold image
         
         kernel = np.ones((5,5), np.uint8)
         iters = 4
@@ -466,8 +468,7 @@ def transform_convex_image2linear_old(im):
    
     #tight crop to edge fits:
     x = np.round(im_crop.shape[0]*0.5)
-     
-    BW = im_crop[ 0:x.astype(int) , :]  > 0.5*np.mean(im) #Threshold image
+    BW = im_crop[ 0:x.astype(int) , :]  > 1.5*np.mean(im[0:int(im.shape[0]/2),:]) #Threshold image
     
     label_im, nb_labels = ndimage.label(BW)
     sizes = ndimage.sum(BW, label_im, range(nb_labels + 1))
@@ -524,7 +525,7 @@ def transform_convex_image2linear_old(im):
     x = np.round(im_crop.shape[0]*1)
    
     
-    BW = im_crop[ 0:x.astype(int) , :]  > 0.5*np.mean(im) #Threshold image
+    BW = im_crop[ 0:x.astype(int) , :]  > 1.5*np.mean(im[0:int(im.shape[0]/2),:]) #Threshold image
     
     kernel = np.ones((3,3), np.uint8)
     iters = 3
@@ -551,8 +552,10 @@ def transform_convex_image2linear_old(im):
     offset3 = offset3.astype(int)
     end_loc3 = offset3+temp.shape[1]
     end_loc3 = end_loc3.astype(int)
+   
     temp_disk[ offset2: ,  offset3:end_loc3 ] = temp
- 
+    
+    #    import pdb; pdb.set_trace()
     #--- ensure image is of the type float ---
     img = temp_disk.astype(np.float32)
    
@@ -565,6 +568,7 @@ def transform_convex_image2linear_old(im):
     polar_image = np.fliplr(polar_image)
 
     return polar_image
+
 def US_air_image_analysis(im_crop, reverb_lines = 4 ):
     '''
     Ultrasound air image analysis on cropped image im_crop
